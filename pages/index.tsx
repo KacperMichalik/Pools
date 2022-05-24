@@ -28,6 +28,7 @@ const PoolsListPage: NextPage<IPools & ApolloRes> = ({
         <link rel="icon" href="/favicon.ico" />
       </Head> */}
       {/* <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} /> */}
+      <h1>CD working</h1>
       {poolsArray.map((item, key) => {
         const token = item.id;
         const name = item.token0.symbol + "_" + item.token1.symbol;

@@ -5,6 +5,12 @@ import client from "../apollo/client";
 import Image from "next/image";
 import { ApolloRes, IPools } from "../apollo/interfaces";
 import { Pools } from "../apollo/quieries";
+import styled from "styled-components";
+
+const StyledHeader = styled.h1`
+  color: ${(props) => props.theme.colors.main};
+  font-family: "sans-serif";
+`;
 
 const PoolsListPage: NextPage<IPools & ApolloRes> = ({
   pools,
@@ -28,7 +34,7 @@ const PoolsListPage: NextPage<IPools & ApolloRes> = ({
         <link rel="icon" href="/favicon.ico" />
       </Head> */}
       {/* <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} /> */}
-      <h1>CD working</h1>
+      <StyledHeader>CD working</StyledHeader>
       {poolsArray.map((item, key) => {
         const token = item.id;
         const name = item.token0.symbol + "_" + item.token1.symbol;

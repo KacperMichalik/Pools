@@ -26,7 +26,7 @@ export const Pools = gql`
 
 export const Pool = gql`
   query Pool($poolAddress: String) {
-    pool(id: "0x0001fcbba8eb491c3ccfeddc5a5caba1a98c4c28") {
+    pool(id: $poolAddress) {
       token1 {
         name
         symbol

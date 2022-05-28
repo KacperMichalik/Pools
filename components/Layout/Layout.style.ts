@@ -12,11 +12,11 @@ const LayoutWrapper = styled.div`
 `;
 
 const StyledLogo = styled.h2`
+  cursor: pointer;
   display: block;
   font-size: 24px;
   position: absolute;
-  text-shadow: 0px 4px 25px #f60663;
-  margin-left: 0;
+  text-shadow: 0px 4px 35px #f60663;
   left: 0;
   color: ${({ theme }) => theme.colors.primary};
 `;

@@ -11,7 +11,6 @@ const PoolsListPage: NextPage<IPools & ApolloRes> = ({
   loading,
   error,
 }) => {
-  console.log(pools);
   if (loading) {
     return <p>loading</p>;
   }
@@ -19,7 +18,9 @@ const PoolsListPage: NextPage<IPools & ApolloRes> = ({
     return <p>error</p>;
   }
 
-  const poolsArray = pools.filter((item) => item.token1.name !== "NFT");
+  const poolsArray = pools.filter(
+    (item) => item.token1.name !== "NFT" && item.token0Price.charAt(0) !== "0"
+  );
   return (
     <>
       <Header />

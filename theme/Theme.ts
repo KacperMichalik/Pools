@@ -2,7 +2,7 @@ import { DefaultTheme } from "styled-components";
 
 const Theme: DefaultTheme = {
   borderRadius: "10px",
-  fontFamily: "Space Grotesk",
+  fontFamily: `'Space Grotesk', sans-serif`,
 
   colors: {
     white: "#FFFFFF",

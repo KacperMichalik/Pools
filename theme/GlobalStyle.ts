@@ -7,7 +7,7 @@ export const GlobalStyle = createGlobalStyle`
         font-display: block;
         font-style: normal;
         font-weight: 400;
-        src: url("../assets/fonts/SpaceGrotesk-Regular.ttf") format('opentype');
+        src: url("../public/static/fonts/SpaceGrotesk-Regular.ttf") format('opentype');
     }
 
 

@@ -2,13 +2,13 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 
-    /* @font-face {
+    @font-face {
         font-family: 'Space Grotesk';
         font-display: block;
         font-style: normal;
         font-weight: 400;
         src: local('Space Grotesk'), url(/static/fonts/SpaceGrotesk-Regular.woff2) format('woff2');
-    } */
+    }
 
     *, *::before, *::after {
         box-sizing: border-box;

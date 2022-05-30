@@ -2,15 +2,6 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 
-    @font-face {
-        font-family: 'Space Grotesk';
-        font-display: block;
-        font-style: normal;
-        font-weight: 400;
-        src: url("../public/static/fonts/SpaceGrotesk-Regular.ttf") format('opentype');
-    }
-
-
     *, *::before, *::after {
         box-sizing: border-box;
         -webkit-font-smoothing: antialiased;

@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Link from "next/link";
 import { FC } from "react";
 import { ThemeProvider } from "styled-components";
@@ -17,6 +18,11 @@ const Logo: FC = () => {
 const Layout: FC<LayoutInterface> = ({ children }) => {
   return (
     <>
+      <Head>
+        <title>Pools</title>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <ThemeProvider theme={Theme}>
         <GlobalStyle />
         <LayoutWrapper>
